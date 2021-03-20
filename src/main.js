@@ -11,7 +11,7 @@ const y = () => document.getElementById("freezing-temp").innerHTML = 32;
 setTimeout(y, 0);
 
 //Water Temp
-const water_temp = 415
+const water_temp = 500
 document.getElementById("water-temp").innerHTML = water_temp;
 
 
@@ -47,3 +47,39 @@ let goodEnough = () => {
   }
 }
 setTimeout(goodEnough, 3000);
+
+
+
+//ALTERNATIVE WAY - DO NOT USE
+
+// let a = document.getElementById("water-temp");
+// let b = document.getElementById("boiling");
+// let c = document.getElementById("frozen");
+// let d = document.getElementById("good-temp");
+//
+// setTimeout(function coldEnough() {
+//     if (Number(a.innerHTML) > 212) {
+//       b.classList.remove("hide");
+//     } else {
+//     }
+// }, 3000);
+//
+//
+// setTimeout(function coldEnough() {
+//     if (Number(a.innerHTML) < 32) {
+//       c.classList.remove("hide");
+//     } else {
+//     }
+// }, 3000);
+//
+//
+// setTimeout(function goodEnough() {
+//     if (Number(a.innerHTML) >= 33 && Number(a.innerHTML) <= 211) {
+//       d.classList.remove("hide");
+//     } else {
+//     }
+// }, 3000);
+//
+// hotEnough();
+// coldEnough();
+// goodEnough();
